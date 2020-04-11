@@ -8,6 +8,7 @@ pipeline {
 		stage('Login APIM Environments') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: 'wso2envs', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+					sh 'chmod +x config.sh'
 					sh './config.sh'
 				}
 			}
