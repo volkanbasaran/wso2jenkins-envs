@@ -5,6 +5,13 @@ pipeline {
 		API = './LagerAPI-1.0'
 	}
 	stages {
+		stage('Login as root to system') {
+			steps {
+				withCredentials([usernamePassword(credentialsId: 'sudo', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
+					sh 'sudo -s'
+				}
+			}
+		}
 		stage('Login APIM Environments') {
 			steps {
 				withCredentials([usernamePassword(credentialsId: 'wso2envs', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
