@@ -17,7 +17,7 @@ pipeline {
 					sh 'apictl login $ENV -u $USERNAME -p $PASSWORD -k'
 				}
 				echo 'Deploying to Test Environment'
-				sh 'sed -i "s/$CONTEXT/$ENV" $API/Meta-information/api.yaml'
+				sh "sed -i 's/$CONTEXT/$ENV' $API/Meta-information/api.yaml"
 				sh 'apictl import-api -f $API -e $ENV -k --preserve-provider=false --update --verbose'
 			}
 		}
@@ -32,7 +32,7 @@ pipeline {
 					sh 'apictl login $ENV -u $USERNAME -p $PASSWORD -k'
 				}
 				echo 'Deploying to Production Environment'
-				sh 'sed -i "s/$CONTEXT/$ENV" $API/Meta-information/api.yaml'
+				sh "sed -i 's/$CONTEXT/$ENV' $API/Meta-information/api.yaml"
 				sh 'apictl import-api -f $API -e $ENV -k --preserve-provider=false --update --verbose'
 			}
 		}
