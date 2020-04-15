@@ -4,8 +4,8 @@ id:
   version: 1.0.0
 uuid: 1297c3e5-24aa-4806-be05-0cc3f2decaff
 type: HTTP
-context: /prod/1.0.0
-contextTemplate: /prod/{version}
+context: /wso/1.0.0
+contextTemplate: /wso/{version}
 tags: []
 documents: []
 lastUpdated: Apr 14, 2020 4:33:37 PM
