@@ -1,14 +1,14 @@
 id:
   providerName: admin
   apiName: LagerAPI
-  version: "1.0"
-uuid: 97ad6ef0-51b3-4b61-be71-59a19807b039
+  version: 1.0.0
+uuid: 1297c3e5-24aa-4806-be05-0cc3f2decaff
 type: HTTP
-context: /wso/1.0
-contextTemplate: /wso/{version}
+context: /prod/1.0.0
+contextTemplate: /prod/{version}
 tags: []
 documents: []
-lastUpdated: Apr 10, 2020, 6:56:43 PM
+lastUpdated: Apr 14, 2020 4:33:37 PM
 availableTiers:
  -
   name: Bronze
@@ -31,6 +31,7 @@ endpointSecured: false
 endpointAuthDigest: false
 transports: http,https
 advertiseOnly: false
+apiOwner: admin
 subscriptionAvailability: all_tenants
 corsConfiguration:
   corsConfigurationEnabled: false
@@ -50,7 +51,7 @@ corsConfiguration:
    - DELETE
    - PATCH
    - OPTIONS
-endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"http:\/\/volkanbasaran.de:5000\/"},"production_endpoints":{"url":"http:\/\/volkanbasaran.de:5000\/"}}'
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"http://volkanbasaran.de:5000/"},"production_endpoints":{"url":"http://volkanbasaran.de:5000/"}}'
 responseCache: Disabled
 cacheTimeout: 300
 implementation: ENDPOINT
@@ -60,7 +61,7 @@ isDefaultVersion: false
 isPublishedDefaultVersion: false
 environments:
  - Production and Sandbox
-createdTime: "1586463061075"
+createdTime: "1586907213324"
 additionalProperties: {}
 monetizationProperties: {}
 isMonetizationEnabled: false
