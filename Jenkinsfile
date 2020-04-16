@@ -8,6 +8,7 @@ pipeline {
 		stage('Deploy to Test Environment') {
 			environment {
 				ENV = 'test'
+				RETRY = '80'
 			}
 			steps {
 				echo 'Logging into $ENV'
@@ -21,6 +22,7 @@ pipeline {
 		stage('Deploy to Production Environment') {
 			environment {
 				ENV = 'prod'
+				RETRY = '60'
 			}
 			steps {
 				echo 'Logging into $ENV'
