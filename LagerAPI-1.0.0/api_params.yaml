@@ -1,0 +1,19 @@
+environments:
+  - name: dev
+    endpoints:
+      production:
+        url:  'http://volkanbasaran:5001/'
+        config:
+          retryTimeout: $RETRY
+  - name: prod
+    endpoints:
+      production:
+        url:  'http://volkanbasaran:5000/'
+        config:
+          retryTimeout: $RETRY
+  - name: test
+    endpoints:
+      production:
+        url:  'http://volkanbasaran:5002/'
+        config:
+          retryTimeout: $RETRY

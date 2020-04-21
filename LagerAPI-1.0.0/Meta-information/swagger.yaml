@@ -1,14 +1,9 @@
 swagger: "2.0"
 info:
-  description: Api Documentation
-  version: "1.0"
-  title: Api Documentation
-  termsOfService: urn:tos
-  contact: {}
-  license:
-    name: Apache 2.0
-    url: http://www.apache.org/licenses/LICENSE-2.0
-host: volkanbasaran.de:5000
+  description: Api Documentation of Development Environment
+  version: 1.0.0
+  title: Development Environemnt
+host: volkanbasaran.de:5001
 basePath: /
 tags:
  -
