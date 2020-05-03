@@ -2,18 +2,18 @@ environments:
   - name: dev
     endpoints:
       production:
-        url:  'http://volkanbasaran:5001/'
+        url:  'http://192.168.99.100:31525/'
         config:
           retryTimeout: $RETRY
   - name: prod
     endpoints:
       production:
-        url:  'http://volkanbasaran:5000/'
+        url:  'http://192.168.99.100:31943/'
         config:
           retryTimeout: $RETRY
   - name: test
     endpoints:
       production:
-        url:  'http://volkanbasaran:5002/'
+        url:  'http://192.168.99.100:30252/'
         config:
           retryTimeout: $RETRY
