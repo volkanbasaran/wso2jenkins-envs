@@ -1,5 +1,4 @@
 pipeline {
-	agent any
 	environment {
 		CI = 'true'
 		API = './LagerAPI-1.0.0'
