@@ -43,6 +43,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/all:
     get:
       tags:
@@ -70,6 +71,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/deletebyid/{id}:
     delete:
       tags:
@@ -102,6 +104,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/findbyid/{id}:
     get:
       tags:
@@ -178,6 +181,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/post/{hersteller}/{modell}/{baujahr}/{artikelname}/{ekpreis}/{verkpreis}/{mengeverfuegbar}:
     post:
       tags:
@@ -296,6 +300,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/searchartikelname:
     get:
       tags:
@@ -329,6 +334,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
   /lager/update:
     put:
       tags:
@@ -365,6 +371,7 @@ paths:
         default: []
       deprecated: false
       x-auth-type: Application & Application User
+      x-throttling-tier: Unlimited
 securityDefinitions:
   default:
     type: oauth2
