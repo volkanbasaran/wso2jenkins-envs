@@ -1,10 +1,10 @@
  -
-  id: 3d9dac26-06f9-4c40-9198-b32e01c8b72f
+  id: 4f1c24d5-5a30-4deb-8773-74a1e94f3314
   type: OTHER
-  name: Docu
-  summary: Docu of API
+  name: Docs
+  summary: Docs
   sourceType: FILE
   visibility: API_LEVEL
-  lastUpdated: Jun 19, 2020 1:28:21 PM
+  lastUpdated: Jun 22, 2020 9:27:57 AM
   filePath: jackson.txt
   otherTypeName: txt
